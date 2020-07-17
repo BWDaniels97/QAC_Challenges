@@ -21,9 +21,9 @@ def multiply_grid():
 def again():
 
     again_choice = input('Do you want play again (Y)es or (N)o:')
-    if again_choice.upper() == 'Y':
+    if again_choice.upper() == 'Y' or again_choice.upper() == 'YES':
         multiply_grid()
-    elif again_choice.upper() == 'N':
+    elif again_choice.upper() == 'N' or again_choice.upper() == 'NO':
         print('Goodbye!')
     else:
         print('Invalid choice!')
