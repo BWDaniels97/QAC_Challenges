@@ -7,27 +7,31 @@ Create a times table square!
 
 '''
 
-def multiply_grid():
+def multiply_grid(x):
 
-    n = int(input("Enter number: "))
+    mylist = []
+    
+    
 
-    for x in range (1, n+1):
-        for y in range (1, n+1):
-            print (x*y,'\t',end=" ")
-        print('\n')
-    again()
+    for a in range (1, x+1):
+        
+        for b in range (1, x+1):
+            
+            mylist.append(a*b)
+            mylist.append('\t')
+        
+        mylist.append('\n')
+            
+           
+    return mylist
+    
+    
+    
 
 
-def again():
-
-    again_choice = input('Do you want play again (Y)es or (N)o:')
-    if again_choice.upper() == 'Y' or again_choice.upper() == 'YES':
-        multiply_grid()
-    elif again_choice.upper() == 'N' or again_choice.upper() == 'NO':
-        print('Goodbye!')
-    else:
-        print('Invalid choice!')
-        again()
 
         
-multiply_grid()
+    
+n = int(input("Enter number: "))
+
+print(*multiply_grid(n))
