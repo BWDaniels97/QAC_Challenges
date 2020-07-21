@@ -20,8 +20,8 @@ def test_string_gen1():
 	assert type(string_gen.string_gen()) is str
 
 def test_string_gen2():
-    assert len(string_gen.string_gen()) == 5
+	assert len(string_gen.string_gen()) == 5
 
 def test_string_gen3():
-    assert (string_gen.string_gen()).islower() == True
+    	assert (string_gen.string_gen()).islower() == True
 
